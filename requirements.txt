@@ -1,0 +1,26 @@
+# Python 3.12
+#
+# Set OPENAI_API_KEY (and optional OPENAI_BASE_URL for non-OpenAI endpoints)
+# before running the chains. See README.
+
+# OpenAI-compatible LLM client used by src/llm_loader.py and streaming calls
+# in src/bench_pipeline.py / src/analyzer_loop.py.
+openai
+
+# pytest + plugins invoked as a subprocess by src/bench_pipeline.py to
+# evaluate the generated test suites against the reference implementation.
+pytest
+pytest-cov
+
+# Correlations + classification metrics in paper/recompute_tables.py,
+# paper/add_mean_cls_rows.py.
+scipy
+scikit-learn
+
+# Complexity metrics used by src/complexity_metrics.py (cyclomatic complexity,
+# halstead, maintainability index, cognitive complexity).
+radon
+cognitive-complexity
+
+# Progress bars in src/run_bench.py, src/analyzer_loop.py, src/compute_hit_rate.py.
+tqdm

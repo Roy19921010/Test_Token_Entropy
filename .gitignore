@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.coverage
+coverage.json
+
+
+# Experimental data
+data/
+
+# Benchmark input datasets
+datasets/
+
+# Data paths
+outputs/
+outputs_raw/
+outputs_bench/
+outputs_bench_*/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
